@@ -1,0 +1,165 @@
+.btn_login {
+    border: var(--border-bt-1px);
+    height: var(--height-bt-medium);
+    width: var(--width-bt-medium);
+    border-radius: var(--border-radius-5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: var(--cursor-bt-style);
+}
+
+.btn_become_author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    margin-right: 20px;
+    color: var(--color-black-90);
+    cursor: var(--cursor-bt-style);
+    text-decoration-line: none;
+}
+
+.btn_cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    cursor: var(--cursor-bt-style);
+    position: relative;
+}
+
+.btn_menu {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--width-bt-medium);
+    height: var(--height-bt-medium);
+    background-color: var(--global-color-primary);
+    color: var(--color-white);
+    cursor: var(--cursor-bt-style);
+    border: var(--border-bt-1px-primary);
+    border-radius: var(--border-radius-5px);
+    margin-top: 1rem;
+}
+
+.btn_close {
+    display: flex;
+    cursor: var(--cursor-bt-style);
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration-line: unset;
+    color: var(--color-black-90);
+    cursor: var(--cursor-bt-style);
+}
+
+.icon_small {
+    width: var(--width-icon-small);
+    height: var(--height-icon-small);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.search_bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: var(--border-bt-1px-black-60);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-5px);
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.search_bar > .input_search {
+    border: 0;
+    outline-width: 0;
+    width: 100%;
+    font-size: 18px !important;
+    padding: 0 1rem;
+}
+
+.icon {
+    width: var(--width-icon-small);
+    height: var(--height-icon-small);
+}
+
+.icon_close {
+    width: var(--width-icon-small);
+    height: var(--height-icon-small);
+}
+
+.btn_text {
+    margin-left: 1rem !important;
+}
+
+.btn_buy {
+    background-color: var(--color-red-dark);
+    color: var(--color-white-90);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-5px);
+}
+
+.btn_apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--height-bt-medium);
+    width: var(--width-bt-large);
+    background-color: var(--global-color-primary);
+    color: var(--color-white-90);
+}
+
+.btn_checkout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-5px);
+    color: var(--color-white-90);
+    padding: 0.5rem;
+    background-color: var(--global-color-primary);
+}
+
+.btn_follow {
+    border: var(--border-bt-1px-black-60);
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-5px);
+    color: var(--color-black-60);
+}
+
+@media only screen and (max-width: 375px) {
+    .btn_cart {
+        margin-right: 0 !important;
+    }
+}
+
+.num_cart {
+    border-radius: 50%;
+    background-color: var(--color-red-dark);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white-90);
+}

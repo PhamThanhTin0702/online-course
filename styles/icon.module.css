@@ -1,0 +1,24 @@
+.icon_small {
+    width: var(--width-icon-small);
+    height: var(--height-icon-small);
+}
+
+.icon_small_18 {
+    width: var(--width-icon-small-18);
+    height: var(--height-icon-small-18);
+}
+
+.icon_small_14 {
+    width: var(--width-icon-small-14);
+    height: var(--height-icon-small-14);
+}
+
+.icon_medium {
+    width: var(--width-icon-medium);
+    height: var(--height-icon-medium);
+}
+
+.icon_large {
+    width: var(--width-icon-large);
+    height: var(--height-icon-large);
+}

@@ -1,0 +1,40 @@
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.category {
+    padding: 4px 12px;
+    margin-bottom: 10px !important;
+    margin-right: 10px !important;
+    border: var(--border-bt-1px-black-60);
+    border-radius: var(--border-bt-radius);
+    cursor: var(--cursor-bt-style);
+    color: var(--color-black-60);
+}
+
+.category > span {
+    white-space: nowrap;
+}
+
+.category:hover {
+    color: var(--global-color-primary);
+    border: var(--border-bt-1px-primary);
+}
+
+@media only screen and (max-width: 375px) {
+    .categories::-webkit-scrollbar {
+        display: none;
+    }
+      
+      /* Hide scrollbar for IE, Edge and Firefox */
+    .categories {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        flex-wrap: nowrap !important;
+        overflow: scroll !important;
+    }
+}

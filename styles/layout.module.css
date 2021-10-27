@@ -1,0 +1,228 @@
+.layout {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--global-font-size-normal);
+    box-sizing: border-box;
+}
+
+.layout > .header {
+    width: 100%;
+    display: flex;
+    min-height: 75px;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    border-bottom: 1px solid var(--color-grey);
+    z-index: 5;
+}
+
+.layout > .body_row {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    min-height: calc(100vh - 260px);
+}
+
+.layout > .navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 100vh;
+    transition: 0.5s width;
+    z-index: 9;
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
+.navigation > .usr_inf_wrapper {
+    padding: 1rem;
+    border-bottom: var(--border-bt-1px-black-30);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.navigation > .usr_cf_wrapper {
+    padding: 1rem;
+}
+
+.layout > .navigation_top {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    z-index: 9;
+    background-color: var(--color-white);
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: 0.5s height;
+    -moz-transition: 0.5s height;
+    -o-transition: 0.5s height;
+    transition: 0.5s height;
+}
+
+.layout > .navigation_bottom {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    z-index: 9;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation_bottom > .container {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 0;
+    overflow: hidden;
+    border-top-left-radius: var(--border-radius-20px);
+    border-top-right-radius: var(--border-radius-20px);
+    -webkit-transition: 0.5s height;
+    -moz-transition: 0.5s height;
+    -o-transition: 0.5s height;
+    transition: 0.5s height;
+}
+
+.ngt_bt_active {
+    height: 100vh !important;
+    background-color: var(--color-black-surface);
+    z-index: 9;
+}
+
+.ngt_bt_ctn_active {
+    height: 60% !important;
+    z-index: 10;
+    background-color: var(--color-white);
+}
+
+.navigation > .btn_close_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 1rem;
+    border-bottom: var(--border-bt-1px-black-30);
+    height: 75px;
+}
+
+.navigation_top > .btn_close_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 1rem;
+    border-bottom: var(--border-bt-1px-black-30);
+    height: 75px;
+}
+
+.ngt_top_active {
+    height: 75px !important;
+}
+
+.ngt_active {
+    width: 100% !important;
+}
+
+.sidebar_wrapped {
+    max-width: 1270px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 215px;
+    z-index: -1;
+}
+
+.sidebar_wrapped > .sidebar {
+    width: 197px;
+}
+
+.main_content {
+    width: 720px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.right_arrow_icon {
+    width: 100%;
+}
+
+.layout > .footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px 24px 0 0;
+    background-color: var(--global-color-primary);
+    justify-content: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.footer > .content {
+    font-size: var(--global-font-size-normal);
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .main_content {
+        width: 975px !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar_wrapped {
+        height: 40px;
+        overflow: hidden;
+        background-color: #fff;
+        top: 0;
+        z-index: 5;
+    }
+
+    .body_row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    
+    .main_content {
+        width: 704px !important;
+    }
+
+    .main_content_v2 {
+        width: 100%;
+    }
+    
+    .header_menu {
+        display: flex !important;
+        flex-direction: column;
+        cursor: pointer;
+        height: 60px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .main_content {
+        width: 311px !important;
+    }
+}

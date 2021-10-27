@@ -1,0 +1,35 @@
+.lesson {
+    padding: 0.5rem 1rem;
+    background-color: var(--color-white-90);
+}
+
+.lesson:hover {
+    cursor: var(--cursor-bt-style);
+}
+
+.lesson:nth-child(even) {
+    border-top: var(--border-bt-1px-black-30);
+    border-bottom: var(--border-bt-1px-black-30);
+}
+
+.lesson > .name {
+    margin: 0;
+    color: var(--color-paragraph);
+}
+
+.lesson > .duration_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.duration_wrapper > .duration {
+    font-size: 16px !important;
+    color: var(--color-black-60);
+    margin-left: 0.5rem !important;
+}
+
+.private {
+    opacity: 0.4;
+    cursor: var(--cursor-bt-style-not-allow);
+}
